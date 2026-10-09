@@ -228,7 +228,7 @@ export default function App() {
       <aside className="sidebar">
       <div className="brand">
         <div className="logo">
-          <img src="LOGO.jpg" alt="CareOps Sentinel" />
+          <img src="/LOGO.jpg" alt="CareOps Sentinel" />
         </div>
         <div>
           <b>CareOps</b>
