@@ -21,7 +21,7 @@ export default function Login({ onLogin }) {
         <ul><li><ShieldCheck size={16} /> No medical advice, no confidential data</li><li><ShieldCheck size={16} /> Every answer cites approved sources</li><li><ShieldCheck size={16} /> Full audit trail of every action</li></ul>
       </div>
       <form className="login-card" onSubmit={submit}>
-        <h2>Sign in</h2><span className="muted">Synthetic data only. Do not enter real credentials.</span>
+        <h2>Sign in</h2><span className="muted"></span>
         <label>User ID<input value={id} onChange={(e) => setId(e.target.value)} autoComplete="username" autoFocus placeholder="e.g. EMP-1001" required /></label>
         <label>Password<input type="password" value={pw} onChange={(e) => setPw(e.target.value)} autoComplete="current-password" required /></label>
         <ErrorNote error={err} />
