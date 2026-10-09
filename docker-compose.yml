@@ -1,0 +1,11 @@
+services:
+  careops:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      CAREOPS_SECRET_KEY: ${CAREOPS_SECRET_KEY:?set a long random value in .env}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CAREOPS_DEMO_MODE: ${CAREOPS_DEMO_MODE:-1}
+    volumes: ["careops-data:/data"]
+volumes:
+  careops-data:
