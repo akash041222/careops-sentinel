@@ -6,8 +6,8 @@ role-based consoles, and a tamper-evident audit trail. **Synthetic data only.**
 ## Run it (full-stack: API + website on ONE URL)
 The built web app is included in `frontend/dist`, so Node is **not** needed to run it.
 ```bash
-./run.sh            # Windows: run.bat      -> open http://localhost:8000
-# or by hand (Python 3.10+):
+
+# Python 3.10+:
 pip install -r requirements.txt && uvicorn app.main:app --port 8000
 # or Docker:
 echo "CAREOPS_SECRET_KEY=$(python3 -c 'import secrets;print(secrets.token_hex(32))')" > .env && docker compose up --build
