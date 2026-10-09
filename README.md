@@ -4,13 +4,10 @@ Grounded answers with citations, guided workflows that ask for missing informati
 role-based consoles, and a tamper-evident audit trail. **Synthetic data only.**
 
 ## Run it (full-stack: API + website on ONE URL)
-The built web app is included in `frontend/dist`, so Node is **not** needed to run it.
-```bash
 
 # Python 3.10+:
 pip install -r requirements.txt && uvicorn app.main:app --port 8000
-# or Docker:
-echo "CAREOPS_SECRET_KEY=$(python3 -c 'import secrets;print(secrets.token_hex(32))')" > .env && docker compose up --build
+
 ```
 Developing the UI? `cd frontend && npm install && npm run dev` (hot reload on :5173, talks to the API on :8000).
 After UI changes run `npm run build` so the backend serves the new version. API docs: http://localhost:8000/docs
