@@ -14,7 +14,9 @@ export default function Login({ onLogin }) {
   return (
     <div className="login-page">
       <div className="login-hero">
-        <div className="logo big"><HeartPulse size={30} /></div>
+      <div className="logo big">
+        <img src="/LOGO.png" alt="CareOps Sentinel" />
+      </div>
         <h1>CareOps Sentinel</h1><p>AI-powered healthcare operations assistant. Grounded answers, guided workflows, and a human always in the loop.</p>
         <ul><li><ShieldCheck size={16} /> No medical advice, no confidential data</li><li><ShieldCheck size={16} /> Every answer cites approved sources</li><li><ShieldCheck size={16} /> Full audit trail of every action</li></ul>
       </div>

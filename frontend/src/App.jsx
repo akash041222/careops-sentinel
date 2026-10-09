@@ -226,7 +226,15 @@ export default function App() {
   return (
     <div className="shell">
       <aside className="sidebar">
-        <div className="brand"><div className="logo"><HeartPulse size={20} /></div><div><b>CareOps</b><span>Sentinel</span></div></div>
+      <div className="brand">
+        <div className="logo">
+          <img src="/LOGO.png" alt="CareOps Sentinel" />
+        </div>
+        <div>
+          <b>CareOps</b>
+          <span>Sentinel</span>
+        </div>
+      </div>
         <nav aria-label="Main">{nav.map(([k, label, Icon]) => <button key={k} className={current === k ? "active" : ""} onClick={() => setPage(k)} aria-current={current === k ? "page" : undefined}><Icon size={18} />{label}</button>)}</nav>
         
         {["support_agent", "operations_manager", "admin"].includes(user.role) && (
